@@ -1,10 +1,10 @@
 <template>
-  <div class="col-md-5 mb-4">
+  <div class="col-md-6 mb-4">
     <div class="card h-100">
       <header class="card-header d-flex align-items-center">
-        <h2 class="h3 card-header-title">Rider Details</h2>
+        <h2 class="h3 card-header-title">Agent Details</h2>
         <div class="ml-auto">
-          <button class="btn btn-sm btn-danger"> Delete Rider</button>
+          <button class="btn btn-sm btn-danger"> Agent Rider</button>
         </div>
       </header>
 
@@ -113,8 +113,6 @@
 </template>
 
 <script>
-export default {
-    name:"RiderDetails",
-};
+
 </script>
 

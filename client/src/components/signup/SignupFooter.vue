@@ -8,12 +8,3 @@
   </div>
 </template>
 
-<script>
-export default {
-  // No methods or lifecycle hooks needed
-};
-</script>
-
-<style scoped>
-/* Add scoped CSS styles here */
-</style>

@@ -3,7 +3,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Add New Rider</h1>
+          <h2 class="modal-title fs-5" id="staticBackdropLabel">Add New User</h2>
         </div>
         <div class="modal-body">
           <h4 class="text-uppercase">Personal Details</h4>
@@ -28,32 +28,14 @@
               <textarea class="form-control" placeholder="Address"></textarea>
             </div>
           </div>
-          <h4 class="h5 text-uppercase mt-3">Rider Details </h4>
+          <h4 class="h5 text-uppercase mt-3">Login Details </h4>
           <div class="row">
-            
-            <div class="col-md-6">
-              <select class="form-control">
-                <option value="Motocycle">Motocycle</option>
-                <option value="Tricycle">Tricycle</option>
-                <option value="Mini Van">Mini Van</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Make" />
-            </div>
 
             <div class="col-md-6 mt-2">
-              <input type="text" class="form-control" placeholder="Model" />
+              <input type="password" class="form-control" placeholder="Password" />
             </div>
             <div class="col-md-6 mt-2">
-              <input type="text" class="form-control" placeholder="Year" />
-            </div>
-
-            <div class="col-md-6 mt-2">
-              <input type="text" class="form-control" placeholder="VIN Number" />
-            </div>
-            <div class="col-md-6 mt-2">
-              <input type="text" class="form-control" placeholder="Plate Number" />
+              <input type="password" class="form-control" placeholder="Confirm Password" />
             </div>
 
           </div>
@@ -73,19 +55,9 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Add Rider</button>
+          <button type="button" class="btn btn-primary">Save</button>
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<script>
-export default {
-    name:"RiderModal",
-};
-</script>
-
-<style scoped>
-/* Your component's styles go here */
-</style>

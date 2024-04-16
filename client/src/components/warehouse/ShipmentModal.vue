@@ -22,13 +22,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-    name:"ShipmentModal",
-};
-</script>
-
-<style>
-/* Add your CSS styles here */
-</style>

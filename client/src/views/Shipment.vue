@@ -2,8 +2,9 @@
   <div>
     <Layout page="shipment">
       <div class="row">
-        <OutCard />
         <DetailCard />
+        <OutCard />
+        
       </div>
     </Layout>
     <DetailModal />

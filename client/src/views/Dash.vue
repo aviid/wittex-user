@@ -8,13 +8,12 @@
         <Doughnut label="Warehouse" :amount="29" />
       </div>
       <div class="row">
-        <DashShipmentCard />
         <DashBatchCard />
+        <DashShipmentCard />
       </div>
     </Layout>
     <OutModal />
     <AddBatchModal />
-    <ViewBatchModal />
     <DetailModal />
   </div>
 </template>
@@ -26,7 +25,6 @@ import DashShipmentCard from '@/components/dashboard/DashShipmentCard.vue';
 import DashBatchCard from '@/components/dashboard/DashBatchCard.vue';
 import OutModal from '@/components/dashboard/OutModal.vue';
 import AddBatchModal from '@/components/dashboard/AddBatchModal.vue';
-import ViewBatchModal from '@/components/dashboard/ViewBatchModal.vue';
 import DetailModal from '@/components/shipments/DetailModal.vue';
 
 export default {
@@ -37,7 +35,6 @@ export default {
     DashBatchCard,
     OutModal,
     AddBatchModal,
-    ViewBatchModal,
     DetailModal,
   },
 

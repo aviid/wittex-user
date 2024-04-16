@@ -3,7 +3,8 @@ import Landing from '@/views/Landing.vue'
 import Dash from '@/views/Dash.vue'
 import Shipment from '@/views/Shipment.vue'
 import Tracking from '@/views/Tracking.vue'
-import Rider from '@/views/Rider.vue'
+import Agent from '@/views/Agent.vue'
+import Staff from '@/views/Staff.vue'
 import Warehouse from '@/views/Warehouse.vue'
 import Transaction from '@/views/Transaction.vue'
 import Profile from '@/views/Profile.vue'
@@ -35,9 +36,14 @@ const router = createRouter({
       component: Tracking
     },
     {
-      path: '/rider',
-      name: 'Rider',
-      component: Rider
+      path: '/agent',
+      name: 'Agent',
+      component: Agent
+    },
+    {
+      path: '/staff',
+      name: 'Staff',
+      component: Staff
     },
     {
       path: '/warehouse',

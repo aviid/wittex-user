@@ -3,12 +3,19 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Add New Shipment</h1>
+          <h2 class="modal-title fs-5" id="staticBackdropLabel">Add New Shipment</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <form>
-            <input type="text" class="form-control mb-2" placeholder="Item" />
+            <div class="row mb-2">
+                <div class="col-md-8">
+                    <input type="text" class="form-control mb-2" placeholder="Item" />
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control mb-2" placeholder="Weight(KG)" />
+                </div>
+            </div>
             <textarea class="form-control mb-2" placeholder="Pickup Address"></textarea>
             <textarea class="form-control mb-2" placeholder="Destination Address"></textarea>
 
@@ -53,10 +60,5 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "OutModal",
-};
-</script>
 
 

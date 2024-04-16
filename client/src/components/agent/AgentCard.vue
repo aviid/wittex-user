@@ -1,12 +1,12 @@
 <template>
-  <div class="col-md-7 mb-4">
+  <div class="col-md-6 mb-4">
     <div class="card h-100">
       <header class="card-header d-flex align-items-center">
-        <h3 class="h3 card-header-title">Rider List</h3>
+        <h3 class="h3 card-header-title">Deliery Agents</h3>
         <ul class="list-inline ml-auto mb-0">
           <li class="list-inline-item">
             <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#riderCardModal">
-              <i class="fa fa-plus pr-1"></i>New Rider
+              <i class="fa fa-plus pr-1"></i>New Agents
             </button>
           </li>
         </ul>

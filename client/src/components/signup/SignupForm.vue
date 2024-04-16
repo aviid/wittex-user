@@ -63,7 +63,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-/* Add scoped CSS styles here */
-</style>

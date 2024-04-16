@@ -1,12 +1,12 @@
 <template>
-  <div class="col-md-7 mb-4">
+  <div class="col-md-6 mb-4">
     <div class="card h-100">
       <header class="card-header d-flex align-items-center">
-        <h3 class="h3 card-header-title">Package List</h3>
+        <h3 class="h3 card-header-title"> Users</h3>
         <ul class="list-inline ml-auto mb-0">
           <li class="list-inline-item">
             <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#riderCardModal">
-              <i class="fa fa-plus pr-1"></i> New Shipment
+              <i class="fa fa-plus pr-1"></i>New User
             </button>
           </li>
         </ul>
@@ -19,15 +19,19 @@
               <th scope="col">#</th>
               <th scope="col">Name</th>
               <th scope="col">Mobile</th>
+              <th scope="col">Sex</th>
               <th class="text-center" scope="col">Actions</th>
             </tr>
           </thead>
 
           <tbody>
-            <tr v-for="item in items" :key="item.id">
-              <td>{{ item.id }}</td>
-              <td>{{ item.name }}</td>
-              <td>{{ item.mobile }}</td>
+            <tr v-for="rider in riders" :key="rider.id">
+              <td>{{ rider.id }}</td>
+              <td>{{ rider.name }}</td>
+              <td>{{ rider.mobile }}</td>
+              <td>
+                <span class="badge badge-primary">{{ rider.sex }}</span>
+              </td>
               <td class="text-center">
                 <button class="btn btn-sm btn-warning btn-outline-warning"><i class="fa fa-pen"></i></button>
                 <button class="btn btn-sm btn-success btn-outline-success ml-1 px-2"><i class="fa fa-eye"></i></button>
@@ -38,12 +42,12 @@
       </div>
 
       <footer class="card-footer d-flex align-items-center">
-        <div>
+        <div class="">
           <button class="btn btn-sm btn-primary mr-2"><i class="fa fa-arrow-left"></i></button>
           <button class="btn btn-sm btn-primary"><i class="fa fa-arrow-right"></i></button>
         </div>
         <div class="ml-auto">
-          <span class="badge badge-info">Total Shipment: {{ totalShipments }}</span>
+          <span class="badge badge-info">Total Shipment: 45</span>
         </div>
       </footer>
     </div>
@@ -54,25 +58,12 @@
 export default {
   data() {
     return {
-      items: [
+      riders: [
         { id: 1, name: 'Esther Esewi', mobile: '0818484833', sex: 'Female' },
         { id: 2, name: 'Blanche Powers', mobile: '08174983991', sex: 'Male' },
-        { id: 3, name: 'Blanche Powers', mobile: 'Dropbox Inc.', sex: 'On Transit' },
-        { id: 4, name: 'Blanche Powers', mobile: 'Dropbox Inc.', sex: 'On Transit' },
-        { id: 5, name: 'Blanche Powers', mobile: 'Dropbox Inc.', sex: 'On Transit' },
-        { id: 6, name: 'Blanche Powers', mobile: 'Dropbox Inc.', sex: 'On Transit' },
-        { id: 7, name: 'Blanche Powers', mobile: 'Dropbox Inc.', sex: 'On Transit' },
-      ],
+        // Add more riders as needed
+      ]
     };
-  },
-  computed: {
-    totalShipments() {
-      return this.items.length;
-    },
-  },
+  }
 };
 </script>
-
-<style scoped>
-/* Your component's styles go here */
-</style>

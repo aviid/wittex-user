@@ -49,13 +49,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name:"DashBatchCard"
-};
-</script>
-
-<style>
-/* Your component's styles go here */
-</style>

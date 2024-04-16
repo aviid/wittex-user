@@ -1,19 +1,13 @@
 <template>
-  <div class="col-md-7 mb-4">
+  <div class="col-md-6 mb-4">
     <div class="card h-100">
       <header class="card-header d-flex align-items-center">
         <h3 class="h3 card-header-title">Shipment List</h3>
-        <ul class="list-inline ml-auto mb-0">
-          <li class="list-inline-item">
-            <input type="date" class="form-control form-control-sm" placeholder="dd-mm-yyyy" />
-          </li>
-        </ul>
       </header>
       <div class="table-responsive">
         <table class="table table-hover">
           <thead>
             <tr>
-              <th scope="col">#</th>
               <th scope="col">Sender</th>
               <th scope="col">Mobile</th>
               <th scope="col">Status</th>
@@ -21,8 +15,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(shipment, index) in shipments" :key="index">
-              <td>{{ index + 1 }}</td>
+            <tr v-for="(shipment) in shipments" :key="index">
               <td>{{ shipment.sender }}</td>
               <td>{{ shipment.mobile }}</td>
               <td><span class="badge badge-primary">{{ shipment.status }}</span></td>

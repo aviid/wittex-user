@@ -31,9 +31,16 @@
           </li>
 
           <li class="u-sidebar-nav-menu__item">
-            <a :class="{ 'u-sidebar-nav-menu__link': true, 'active': page === 'rider' }" href="/rider">
+            <a :class="{ 'u-sidebar-nav-menu__link': true, 'active': page === 'agent' }" href="/agent">
               <i class="fas fa-motorcycle u-sidebar-nav-menu__item-icon"></i>
-              <span class="u-sidebar-nav-menu__item-title">Rider</span>
+              <span class="u-sidebar-nav-menu__item-title">Delivery Agent</span>
+            </a>
+          </li>
+
+          <li class="u-sidebar-nav-menu__item">
+            <a :class="{ 'u-sidebar-nav-menu__link': true, 'active': page === 'staff' }" href="/staff">
+              <i class="fas fa-user u-sidebar-nav-menu__item-icon"></i>
+              <span class="u-sidebar-nav-menu__item-title">Users</span>
             </a>
           </li>
           <hr />

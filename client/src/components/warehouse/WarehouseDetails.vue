@@ -19,6 +19,7 @@
           <div class="col-md-7">
             <span class="align-middle font-weight-semibold">{{ item.value }}</span>
           </div>
+          <hr/>
         </div>
       </div>
     </div>
